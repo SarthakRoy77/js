@@ -1,0 +1,30 @@
+Javascript is a programming language that is very famous.
+
+How JS works???
+"Everything in Javascript happens inside an Execution Context. "
+
+Execution Content - Execution context is made up of two components called the "variable environment" and "Thread of Execution"
+
+"Javascript is an synchronouse single threaded language"
+Single- threaded meaning Javascript can only execute one command at a time while synchrous meaning in a specific order
+
+How the code is executed??
+1. Javascript skims through the whole program and allocates memory to the functions and variables(as undefined for var) i.e. Memory Creation Phase
+2. Javascript once agains sees the programs and runs it and in the space of "undefinite" it stores the actual value i.e Code Execution Phase
+3.Javascript when the program is fully executed, deletes the global execution context.
+
+What is a Function Invoction in Javascript??
+Whenever you see a function name with parenthesis, it means the function is being executed.
+Functions are like a mini program in JS so , altogether an new execution context is made
+just like the global execution context, so again in the phase 1 all the variables will be stored 
+as undefined . Now the phase two is executed and all the variables are put with their respective values
+When the function invocation is done the function execution context is deleted.
+
+What is a call stack??
+The call stack in JavaScript tracks the order in which functions are executed.
+When a function is called, it’s pushed onto the stack; when it finishes, it’s popped off.
+JavaScript executes code synchronously, processing one stack frame at a time.
+If the stack grows too large due to deep recursion or blocking code, a stack overflow occurs.
+
+"Call Stack maintains the order of execution of Execution contexts"
+It is also known as Execution Context Stack , Machine Stack, Program Stack ,Control Stack, Runtime Stack
