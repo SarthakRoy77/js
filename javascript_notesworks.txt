@@ -35,3 +35,9 @@ declarations are moved to the top of their scope during the compilation phase-
 
 Functions are fully declared because in the Memory Allocation Phase, the code of the function is fully stored.
 Variables are partially declared because in MAP, only undefined is kept as the value of the variable
+
+How functions works??
+Functions are like mini programs and have their own local execution context in JavaScript
+and when a variable is called JavaScript searches the local execution context only 
+not the global execution context so we can have the same variables for the global
+ Execution context and the Local execution context
