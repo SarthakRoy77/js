@@ -10,6 +10,7 @@ This repository collects notes, examples, exercises, and mini-projects created w
 - Share learning resources openly
 
 ## SOURCE 
-- Akshay Saini : Namaste 🙏 Javascript 
+- Akshay Saini : Namaste 🙏 Javascript
+- Bro Code: Javascript Full course for free 🌐 
 
 
