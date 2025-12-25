@@ -55,3 +55,10 @@ A function execution context has two parts a global part and a local part.
 The global part contains the registered functions that comes with Javascript like
 addEventListener() etc. The local part consists of the local memory where Javascript 
 searches for variables.
+
+What is the shortest Javascript program?
+It is just a empty file of JS. As it stil creates a GEC 
+
+What is Window?? 
+Window is a space in which functions made by the Javascript Engine is stored.
+When a GEC is made it comes with the Window space and the "this" variable
