@@ -72,3 +72,23 @@ console.log(students);
 
 let result = 1+2*3+4**2;
 console.log(result);
+
+// const = a variable that can't be changed 
+
+const PI = 3.14159 // Earlier let pi 
+let radius;
+let circumference;
+
+
+document.getElementById("BUTTON").onclick = function(){
+    radius = document.getElementById("myText").value;
+    radius = Number(radius);
+    circumference = 2*PI*radius;
+    document.getElementById("hi").textContent = circumference;
+    
+}
+
+// In this if the value of pi would be changd it would cause an Logical
+// Error so to avoid it we should change
+
+// const PI = 3.14159
