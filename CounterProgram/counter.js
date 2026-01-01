@@ -10,5 +10,5 @@ increaseBtn = document.getElementById('increaseBtn').onclick = function() {
     document.getElementById('countLabel').textContent = number += 1;
 }
 resetBtn = document.getElementById('resetBtn').onclick = function() {
-    document.getElementById('countLabel').textContent = 0;
+    document.getElementById('countLabel').textContent = number = 0;
 }
