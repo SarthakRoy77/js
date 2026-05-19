@@ -202,3 +202,36 @@ class Rectangle{
 const rectangleObject = new Rectangle(-23, -10);
 console.log(rectangleObject.height);
 console.log(rectangleObject.width);
+
+//arrays of objects
+
+const fruits = [   {name: "apple" , color : "red", calories: 95 },
+                                {name: "banana" , color : "yellow", calories: 105},
+                                {name: "pineapple" , color : "brown", calories: 47},
+                                {name: "orange" , color : "orange", calories: 82},
+                                {name: "guava" , color : "green", calories: 54}];
+
+console.log(fruits[0].name);
+// We can use the array methods on array of objects
+
+
+// Date objects = are Objects that contain values that represent times and dates.
+//                  These date objects can be changed and formatted .
+
+let date = new Date();
+console.log(date);
+
+//Date arguments = (year, month, day, hour, minute, second, ms ) , note that the month is an array so Jan is 0 and the time passed
+//                  as an argument should be in military system
+
+//Example
+let customDate = new Date(2026, 6, 16, 23, 7,9, 8);
+console.log(customDate);
+
+// We can also retrieve values from date objects an example is :
+
+month = date.getMonth();
+hours = date.getHours(); // and so on remember there is no pattern in function name and year is 'FullYear'
+
+
+

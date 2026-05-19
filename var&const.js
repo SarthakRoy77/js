@@ -27,7 +27,7 @@ console.log(`bro is online : ${online}`);
 //Mini program
 
 let fullName = "Sarthak";
-let age1 = 25; 
+let age1 = 25;
 let isStudent = true;
 
 document.getElementById('p1').textContent=`My name is ${fullName}`
@@ -75,7 +75,7 @@ console.log(result);
 
 // const = a variable that can't be changed 
 
-const PI = 3.14159 // Earlier let pi 
+const PI = 3.14159 // Earlier let pi
 let radius;
 let circumference;
 
@@ -85,7 +85,7 @@ document.getElementById("BUTTON").onclick = function(){
     radius = Number(radius);
     circumference = 2*PI*radius;
     document.getElementById("hi").textContent = circumference;
-    
+
 }
 
 // In this if the value of pi would be changed it would cause a Logical
@@ -197,3 +197,21 @@ let listNumbers = [1,2,3,4,6];
 let maxNumber = Math.max(...listNumbers)
 
 console.log(maxNumber);
+
+//sort method = method used to sort elements of an array in place.
+//              sorts elements in lexicographic order , not alphabetical
+//              lexicographic = (alphabets + numbers + symbols) as strings
+
+// To sort strings
+let myFruits = ["apple", "guava" , "orange", "pineapple", "coconut"];
+console.log(myFruits.sort())
+
+// To sort numbers
+let myNumbers = [1, 14, 234, 11243, 441, 2, 4, 21]
+console.log(myNumbers.sort((a,b) => a - b));
+
+//To sort symbols
+let myObjects = [{name : "Sarthak", percentage : 98.6},
+    {name : "Ankita", percentage : 97.6},
+    {name : "Kumari Anuradha", percentage : 72},]
+console.log(myObjects.sort((a,b) => a.localeCompare(b.name)));
