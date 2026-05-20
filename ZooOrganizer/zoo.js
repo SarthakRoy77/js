@@ -14,10 +14,21 @@ class ZooAnimal {
 
         ZooAnimal.animalsRecorded++ ;
 
-
     }
     static revealAnimalFrequency() {
         console.log(`${ZooAnimal.animalsRecorded} animals have been recorded`);
+    }
+
+    feedAnimal() {
+        console.log(`Fed ${this.name}`);
+    }
+
+    sendToSleep() {
+        console.log(`Sent ${this.name} to sleep`)
+    }
+
+    celebrateBirthday() {
+        console.log(`Happy ${this.age}th Birthday to ${this.name} `);
     }
 }
 
@@ -25,12 +36,26 @@ class ZooAnimal {
 class ZooStaff{
     static staffRecorded = 0;
 
-    constructor(name, age, previousExperience ) {
+    constructor(name, age, previousExperience, wage ) {
         this.name = name;
         this.age = age;
         this.previousExperience = previousExperience;
+        this.wage = wage;
 
         ZooStaff.staffRecorded++;
+
+    }
+
+    sendToWork(){
+        console.log(`Sent ${this.name} to work `);
+    }
+
+    payStaff() {
+        console.log(`Paid ${this.wage} to ${this.name}`);
+    }
+
+    celebrateBirthday() {
+        console.log(`Happy ${this.age}th Birthday to ${this.name} `);
     }
 
     static revealStaffFrequency() {
@@ -48,16 +73,22 @@ console.log(Tiger1.gender);
 console.log(Tiger1.age);
 console.log(Tiger.name);
 console.log(Tiger1.type);
+Tiger.feedAnimal();
+Tiger.sendToSleep();
+Tiger.celebrateBirthday();
 
 //Let us create few Staff Objects
 
-const Manager = new ZooStaff('Michael Jordan', 33, true);
-const ZooKeeper = new ZooStaff('Cristiano Ronaldo', 41, false);
+const Manager = new ZooStaff('Michael Jordan', 33, true, 30000);
+const ZooKeeper = new ZooStaff('Cristiano Ronaldo', 41, false, 10000);
 
 ZooStaff.revealStaffFrequency();
 console.log(Manager.name);
 console.log(Manager.age);
 console.log(ZooKeeper.previousExperience);
 console.log(ZooKeeper.name);
+console.log(Manager.wage);
 
-
+ZooKeeper.payStaff();
+ZooKeeper.celebrateBirthday();
+Manager.sendToWork()
