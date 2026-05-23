@@ -45,3 +45,40 @@ Dog1.getName();
 Animal.getAnimalCount();
 console.log(Dog1.name1);
 console.log(Dog1.species);
+
+//setters and getters - Setters make the code writable but not readable . so getters come in to make the property readable ,
+//                      so it is necessary if we use setters.
+class Rectangle {
+    constructor(width, height){
+        this.width = width;
+        this.height = height;
+    }
+
+    set width(newWidth){
+        if (newWidth > 0){
+            this._width = newWidth;
+        }
+        else{
+            console.error(`The width should be a positive number`);
+        }
+
+    }
+
+    set height(newHeight){
+        if (newHeight > 0){
+            this._height = newHeight;
+        }
+        else{
+            console.error(`The length should be a positive number`);
+        }
+
+    }
+
+    get width(){
+        return this._width;
+    }
+
+    get height(){
+        return this._height;
+    }
+}
