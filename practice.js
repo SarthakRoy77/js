@@ -82,3 +82,7 @@ class Rectangle {
         return this._height;
     }
 }
+
+const firstRectangle = new Rectangle(3, 4);
+console.log(firstRectangle.height);
+console.log(firstRectangle.width);
